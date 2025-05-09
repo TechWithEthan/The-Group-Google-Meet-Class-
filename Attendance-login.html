@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Portal - Employee Attendance Login</title>
+    <link rel="icon" href="images/Logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="Attendance-login.css">
+
+      <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <main class="login-container" role="main">
+        <img src="images/Logo.png" alt="Company Logo" class="logo">
+        <h1>Welcome to..</h1>
+        <p class="welcome">Employee Attendance Portal</p>
+
+        <!-- Social Login Buttons -->
+        <div class="social-login">
+            <button class="google-btn" id="googleSignIn">Google</button>
+            <button class="facebook-btn" id="facebookSignIn">Facebook</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" aria-label="Login Form">
+            <div class="login-group">
+                <input type="text" id="username" placeholder="Username" required aria-label="Username">
+                <input type="password" id="password" placeholder="Password" required aria-label="Password">
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <p><a href="Forgot Password.html">Forgot your password?</a></p>
+    </main>
+
+    <script src="Attendance-data.js"></script>
+</body>
+</html>

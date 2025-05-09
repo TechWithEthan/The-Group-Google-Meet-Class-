@@ -1,0 +1,133 @@
+  /* Improved background and typography */
+  body {
+    background: linear-gradient(135deg, #f0f4f8, #c3cfe2);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+
+  /* Sidebar Styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #2c3e50;
+    color: #fff;
+    padding-top: 30px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .sidebar a {
+    display: block;
+    color: #ccc;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .sidebar a:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  /* Main content area */
+  .main-content {
+    margin-left: 270px;
+    padding: 30px;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .topbar h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .user-profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* Dashboard Cards */
+  .dashboard-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    text-align: center;
+  }
+
+  .dashboard-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .dashboard-card i {
+    font-size: 40px;
+    color: #3498db;
+  }
+
+  .dashboard-card h5 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .dashboard-card p {
+    color: #777;
+    font-size: 16px;
+  }
+
+  /* Grid layout for cards */
+  .row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .col-md-6 {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+  }
+
+  /* Responsive sidebar for mobile */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+    }
+
+    .main-content {
+      margin-left: 0;
+    }
+
+    .sidebar a {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .topbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificate Authentication</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="Certification Authentication.css">
+  <link rel="icon" href="images/Logo.png" type="image/x-icon">
+
+  <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+  <!-- Authentication Box -->
+  <div class="auth-box">
+    <h2>Certificate Authentication</h2>
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" placeholder="Your Name" />
+
+    <label for="certificate">Since when did you first connect during the COVID-19 pandemic?</label>
+    <input type="text" id="certificate" name="certificate">
+    
+    <button onclick="verify()">VERIFY</button>
+    <div id="msg" class="message"></div>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="Certification Authentication.js"></script>
+</body>
+</html>
