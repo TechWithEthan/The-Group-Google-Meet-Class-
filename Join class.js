@@ -74,7 +74,7 @@ document.addEventListener('keydown', function (event) {
 
 // Set up countdown timer
 const startTime = new Date("May 10, 2025 2:00:00 PM");
-const endTime = new Date("May 16, 2025 4:00:00 PM");
+const endTime = new Date("May 16, 2025 2:34:00 PM");
 
 const timer = setInterval(() => {
   const now = new Date().getTime();
