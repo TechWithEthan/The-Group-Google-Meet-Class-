@@ -73,8 +73,8 @@ document.addEventListener('keydown', function (event) {
 })();
 
 // Set up countdown timer
-const startTime = new Date("May 16, 2025 4:00:00 PM");
-const endTime = new Date("May 16, 2025 6:00:00 PM");
+const startTime = new Date("August 01, 2025 4:00:00 PM");
+const endTime = new Date("August 01, 20256:00:00 PM");
 
 const timer = setInterval(() => {
   const now = new Date().getTime();
@@ -104,7 +104,7 @@ const timer = setInterval(() => {
     const link = document.getElementById("meetLink");
     link.style.display = "inline-block";
     link.classList.add("btn-disabled");
-    link.setAttribute("href", "#");
+    link.setAttribute("href", "https://meet.google.com/mqf-xtdg-arg");
     link.innerText = "Oops! This Link is No Longer Active";
   }
 }, 1000);
